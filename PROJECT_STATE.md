@@ -1,6 +1,6 @@
 # Frosted Logic MCP Suite — v0.1 complete
 
-Updated **2026-09-29**. The initial architecture and useful vertical slices for all twelve servers are implemented, locally tested and committed. Source repository: [canadianbaconking-collab/mcpservers](https://github.com/canadianbaconking-collab/mcpservers), created by the owner for publication. The servers run locally; no remote MCP host installation or npm publication is included.
+The initial architecture and useful vertical slices for all twelve servers are implemented, tested and published to [canadianbaconking-collab/mcpservers](https://github.com/canadianbaconking-collab/mcpservers). Initial local delivery: **2026-09-29**. GitHub records the publication on **2026-09-30 UTC**. The servers run locally; no remote MCP host installation or npm publication is included.
 
 ## Completed delivery
 
@@ -30,7 +30,7 @@ Updated **2026-09-29**. The initial architecture and useful vertical slices for 
 - All-twelve synthetic workflow passes through inspection, check, evidence, decision, pilot, release readiness and a local file receipt.
 - Formatter, syntax, generated catalog consistency and all **43 pinned vendor files** pass verification.
 - pnpm frozen-lockfile install succeeds offline from the local cache with install scripts disabled.
-- Local Windows execution verified. The supplied Windows/Linux hosted CI workflow has not run on GitHub.
+- Local Windows execution verified. Hosted **Ubuntu and Windows CI both passed**, including Python adapters, on published implementation commit `8e2d2bcdf8d72dd8c5487a9db53655831a93cdbf`: [run 36667954217](https://github.com/canadianbaconking-collab/mcpservers/actions/runs/36667954217).
 
 See [VALIDATION.md](docs/VALIDATION.md) and the retained [final check log](docs/validation.log). Reviews and failure-oriented checkpoints were performed within this task; no independent reviewer or empirical production pilot is claimed.
 
@@ -49,7 +49,7 @@ Exact archive and source-file hashes are in [vendor/SOURCES.json](vendor/SOURCES
 
 The task began in an empty projectless workspace. Existing Frosted Logic projects were inspected without modifying them. Git and Node were available; gh, npm on PATH, Bash and the Git HTTPS clone helper were unavailable. The connected GitHub integration and read-only source archive downloads supplied upstream context. Existing credentials were preserved. No remote repository, issue, pull request or deployment was created.
 
-The suite uses normal local Git on `main`; `origin` points to the owner-created `canadianbaconking-collab/mcpservers` repository. The initial commits use an explicit Codex local author identity because no Git author was configured; global Git identity/authentication settings were left unchanged. Publication uses the connected GitHub Git-data API because the bundled Git lacks HTTPS transport. All tracked source, schemas, tests, docs and vendored code are included; dependencies, local databases and machine-specific configuration are ignored. The initial local commits remain available locally; GitHub publication creates its own API commit history.
+The suite uses normal local Git on `main`; `origin` points to the owner-created `canadianbaconking-collab/mcpservers` repository. The initial commits use an explicit Codex local author identity because no Git author was configured; global Git identity/authentication settings were left unchanged. Publication uses the connected GitHub Git-data API because the bundled Git lacks HTTPS transport. All tracked source, schemas, tests, docs and vendored code are included; dependencies, local databases and machine-specific configuration are ignored. The original local build history is preserved on `local-build-v0.1`; `main` tracks the published `origin/main`. Initial publication verified all 136 file hashes and the complete Git tree. See [publication evidence](docs/PUBLICATION.md).
 
 ## Known limits and unresolved questions
 
@@ -66,5 +66,5 @@ The suite uses normal local Git on `main`; `origin` points to the owner-created 
 1. Build a lossless, versioned SignalForge evidence importer preserving original IDs, provenance, rejected records and source-family semantics; add real upstream compatibility fixtures.
 2. Add SQLite backup/export/migration tooling, artifact discovery/pagination and stronger externally retained integrity anchors.
 3. Pilot against one real Frosted Logic repository with a preregistered acceptance gate; retain failures and separate real/synthetic evidence.
-4. Verify the hosted Windows/Linux matrix in the source repository, then package/install into the desired local MCP client.
+4. Package/install into the desired local MCP client; maintain the passing hosted Windows/Linux matrix.
 5. Extend transactions and remote transports only with explicit authority, recovery and authentication contracts.
