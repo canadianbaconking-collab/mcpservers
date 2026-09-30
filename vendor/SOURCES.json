@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "repository": "https://github.com/canadianbaconking-collab/coldgate",
+      "archiveCommitPrefix": "87844dd",
+      "archiveSha256": "a962af5eb557226759931bb3ba8f0b37852da7b333499af84483796dec6e938d",
+      "inspectedAt": "2026-09-29",
+      "reuse": "pinned source subset"
+    },
+    {
+      "repository": "https://github.com/canadianbaconking-collab/driftglass",
+      "archiveCommitPrefix": "12a4b44",
+      "archiveSha256": "5a3baaac7c5fc675bde2bc7c2f83ab90530e2db2f08a24ce12537216792b26ba",
+      "inspectedAt": "2026-09-29",
+      "reuse": "pinned source subset"
+    },
+    {
+      "repository": "https://github.com/canadianbaconking-collab/faultline",
+      "archiveCommitPrefix": "a64175b",
+      "archiveSha256": "20c029e8f77f237748d1962e2ca5fb866d6fea9d3e9c444c263023283b4f4aae",
+      "inspectedAt": "2026-09-29",
+      "reuse": "pinned source subset"
+    },
+    {
+      "repository": "https://github.com/canadianbaconking-collab/blackbird",
+      "archiveCommitPrefix": "89a32ae",
+      "archiveSha256": "9ee8476870aa37f4ba40cc09fb621d8dd5bdcb76ef8111b474129db50e899a5a",
+      "inspectedAt": "2026-09-29",
+      "reuse": "pinned source subset"
+    },
+    {
+      "repository": "https://github.com/canadianbaconking-collab/signalforge",
+      "archiveCommitPrefix": "1ac9c0e",
+      "archiveSha256": "d1190e9e3ebec4d7c6e84ef8dcbb7d0f808965c740cdca918704002e8a268a15",
+      "inspectedAt": "2026-09-29",
+      "reuse": "contracts reviewed only; no source vendored"
+    }
+  ],
+  "files": {
+    "vendor/blackbird/bundle.py": "cc047bd086993277cabff2f9217019d2ce43e06a9e9b3cf2b67fbe7fb01fb40b",
+    "vendor/blackbird/cli.py": "b9d7dd65eb1ea5bd89a26e15cd0a3e23ba02191fa443f6b2eee690d76c823152",
+    "vendor/blackbird/evaluation.py": "9ae505c931cfb5eaf2342a7bd0f38e393b1d43953c21f2a424a522c684b88cd5",
+    "vendor/blackbird/experiment.py": "fd9def25b3a9aa2b34c4f94753224aef69327da901f6c3d6ff6df8e9a5c17479",
+    "vendor/blackbird/model.py": "6f59fd68b230e6ca0d6831670588f57cbd232c3c499de866216842c0d5d7d19e",
+    "vendor/blackbird/store.py": "1103a8a10329cb98ce8929f5a3a886a747ab04455d2f077aa3ce06f3ccc1ad9b",
+    "vendor/blackbird/__init__.py": "98243defe0dac81c24e8bf8223f97c095d1ced5850c4e7189acd20090e2fcc08",
+    "vendor/blackbird/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "vendor/coldgate/authority/package.json": "f6dd5e7056f0b35b7ef0d454b4acd6b91d975d4a30c74786ff6057b750486649",
+    "vendor/coldgate/authority/src/coverage.ts": "585ff4be661357d42bd72accf54fa1d3bbb148cb7d17ac72388a88f7b191912e",
+    "vendor/coldgate/authority/src/description.ts": "620fb89ca771a12e2f5dbef60d9d4be92808ba4c612141ad714f06b99cc6c6ff",
+    "vendor/coldgate/authority/src/index.ts": "f17a75925ef0844940d76bf9b13c1ede20c2b55c4f1a46606aafbc1c65ee4e54",
+    "vendor/coldgate/authority/src/model.ts": "54acac2e65b187b8b2473cae679ee6dcf281b232a6d1bc2ee815ced50636338a",
+    "vendor/coldgate/authority/src/parameters.ts": "37447c431386e003270081e30e18a94fabc6bae47e9a7c9af3faba7945e1ca00",
+    "vendor/coldgate/authority/src/project.ts": "9bf7fcffecae31449bec88ac4ad0130d05b6f51565f94dd3a74a7c3b9e6e7a1c",
+    "vendor/coldgate/authority/src/reconcile.ts": "2196faa6ecc7c092124f07beb7785338b890080633e6f0d8ea18be649b336229",
+    "vendor/coldgate/authority/src/rules.ts": "664b230d770ab053512d02c16ee36eaeada100cd61f3a7cbdd479a5f793e4d79",
+    "vendor/coldgate/authority/src/scan.ts": "c4c31c33c05724433d71d8838a9ab8347ce373631ea7d40798b19cd59b7c48f8",
+    "vendor/coldgate/authority/src/validate.ts": "161c14b8e90c649af0da7ffc08d908a13a64d60013039116d02ead51b799fcde",
+    "vendor/coldgate/cli/bin/coldgate.js": "51fd984f9bbfe9212ba746d2bfa812709a0f5390a8775a292fd51e3d45c4d627",
+    "vendor/coldgate/cli/package.json": "4e8bebbe66c017fb0bb28e6003987a0c3adab29746cf67505c0b79af6059bb91",
+    "vendor/coldgate/cli/src/cli.ts": "e0e8475818aeb4310812e72f0bcb06721407268898db5ff62f3e9917a8606f56",
+    "vendor/coldgate/diff/bin/coldgate-diff.js": "e6c0fed413a892fc78b2152f078aa080483adccd49d3dfd7cc6dced05e7b14dc",
+    "vendor/coldgate/diff/package.json": "14149b2fea92dc97d51934f57f3871cb1ffba8a5c968f906fa6be71d02966d5e",
+    "vendor/coldgate/diff/src/cli.ts": "f905136f7b19432f7f97ef9f65a0e7d53c156b079a563ac578f20303aee9c9d8",
+    "vendor/coldgate/diff/src/diff.ts": "ac22e95a366956ab2d7322088adff6e74751b0eb9510375b1061ca75ac07d39a",
+    "vendor/coldgate/diff/src/semantics.ts": "fdbac5d5ad23983c94fdb93d367b386fc86e6b8a65b0e4763faa25d14db337c5",
+    "vendor/coldgate/diff/src/validate.ts": "527feb9510a80a5cfc9219ce70f1b3de00887ed1a9570bb6a84acde57c237c53",
+    "vendor/coldgate/trace/package.json": "c4477b214244ed88a88b030447158088b6151eb65715c01181b57dfb9c5d9f09",
+    "vendor/coldgate/trace/src/cli.ts": "c8a382f11c4ff6e28f1fc3aa945e758b41279f9cd9383c0ac39cb7dfde4f2f9a",
+    "vendor/coldgate/trace/src/index.ts": "fa5123bb036a625f8fa2c72358207989a094e34c03481ab636957eac71a97c4a",
+    "vendor/coldgate/trace/src/model.ts": "b1b7db2a8ae5b35483938570d46095faecfee6a0d54aa0b3e7c978e412e57eaa",
+    "vendor/coldgate/trace/src/normalize.ts": "cbd29e76fd84fd785efd98c9cc3d4c9e93190018290866324ce2f9a480271c0a",
+    "vendor/coldgate/trace/src/render.ts": "2927e9bcb9fd46ed3f6caf8de994216cec0125c071ea9f77708b5d4d6685a7ed",
+    "vendor/driftglass/adapter/json-directory.js": "9424cb9f913f8328c4381f857025b04082d93fc32f0873b0dc5ef1a3cb157f10",
+    "vendor/driftglass/adapter/source-traces.js": "de2932fc2d0af38916584fd0f479dad1928e7f6dce12fa0779432e5ed527f725",
+    "vendor/driftglass/ci/index.js": "bc72503852e15dc282fbdedcd21cf8ef58282c0b651f3696808e95baef998142",
+    "vendor/driftglass/diff/index.js": "ef5e394c00aa961e6e2f14622c9a573a003625c2147a8d8d72b2b0adefe0a2d8",
+    "vendor/driftglass/index.js": "8356401fb4b65bef3fdb54d67c11fdd1bebb70857206ea5ad827ddc609707b30",
+    "vendor/driftglass/kernel/index.js": "0084e38eda5ad5948e3916fa35bd5055418aaab60a8d273d1afd50dcc0b37710",
+    "vendor/driftglass/policy-test/index.js": "564a2eace66a611b7efe0d93fd22a6819bd5582510ea21483908b8578d4bc497",
+    "vendor/driftglass/replay/index.js": "7a9db70b411cbdb90965d4d6f02f84c16f3bfea58600aef14f4055ef2e111354",
+    "vendor/faultline/review.py": "1484f73c400abdf71b789b9171d3b775985584f7568f1280273a4e181312d5b5"
+  }
+}

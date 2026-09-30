@@ -1,0 +1,10 @@
+{
+  "name": "@frostedlogic/security-surface-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./tools.mjs",
+  "scripts": {
+    "start": "node ../../bin/serve.mjs security-surface"
+  }
+}

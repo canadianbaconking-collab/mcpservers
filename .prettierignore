@@ -1,0 +1,7 @@
+vendor/
+docs/upstream/
+node_modules/
+pnpm-lock.yaml
+docs/tool-catalog.json
+schemas/
+*.local.json

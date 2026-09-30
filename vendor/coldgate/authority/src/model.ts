@@ -1,0 +1,40 @@
+/** Strength of evidence, independent of whether a capability is safe. */
+export type Status = 'DECLARED' | 'INFERRED' | 'OBSERVED' | 'ENFORCED' | 'UNKNOWN';
+export type Effect = 'READ' | 'WRITE' | 'DESTRUCTIVE' | 'EXECUTE' | 'EXTERNAL_COMMUNICATION' | 'OPEN_WORLD' | 'UNKNOWN';
+export type Approval = 'NOT_REQUIRED' | 'REQUIRED' | 'CONDITIONAL' | 'INHERITED' | 'UNSPECIFIED' | 'UNKNOWN';
+export type BoundaryKind = 'file' | 'directory' | 'repository' | 'repository_pattern' | 'domain' | 'api' | 'account' | 'arbitrary_filesystem' | 'arbitrary_network' | 'unknown';
+export interface Claim<T> { value: T; status: Status; source: string; explanation: string; }
+export interface Boundary { kind: BoundaryKind; value: string; claim: Claim<string>; }
+export interface Principal { kind: 'user' | 'agent' | 'subagent' | 'mcp_server' | 'tool' | 'service_identity' | 'unknown'; name: string; claim: Claim<string>; }
+export interface ParameterSurface { fingerprint: string; finiteProperties: string[]; }
+export interface Capability {
+  parameters?: Claim<ParameterSurface>;
+  provider: string;
+  operation: string;
+  effects: Claim<Effect[]>;
+  effectEvidence: Claim<Effect>[];
+  boundaries: Boundary[];
+  destination: Claim<string>;
+  credentialNames: Claim<string[]>;
+  scopes: Claim<string[]>;
+  approval: Claim<Approval>;
+  delegation: Claim<string>;
+  persistence: Claim<string>;
+  /** Only allowlisted nonsecret raw metadata. Original JSON is never returned. */
+  annotations: { readOnlyHint?: boolean; destructiveHint?: boolean; openWorldHint?: boolean; idempotentHint?: boolean };
+}
+export interface AuthorityRecord { id: string; principal: Principal; capability: Capability; inventory: Claim<'snapshot' | 'unknown'>; selection?: Claim<'INCLUDED' | 'CONDITIONAL'>; }
+export interface Finding {
+  rule: string; level: 'OK' | 'INFO' | 'REVIEW' | 'WARN' | 'UNKNOWN'; recordId: string;
+  observed: string; inferred: string; reason: string; missing: string; evidence: string[];
+}
+export interface InventoryConnection { provider: string; configSource: string; catalogSource: string; sha256: string; listed: number; included: number; excluded: number; missing: number; selectionConditional: boolean; }
+/** Disjoint counts per dimension. They measure evidence presence, not safety. */
+export interface Coverage {
+  records: number;
+  effect: { declaredOnly: number; inferredOnly: number; mixed: number; observedClaim: number; enforcedClaim: number; unknown: number };
+  approval: { explicit: number; conditionalInherited: number; observedClaim: number; unknown: number };
+  inventory: { snapshot: number; observedClaim: number; unknown: number };
+  boundary: { explicit: number; inferred: number; observedClaim: number; unknown: number };
+}
+export interface Report { coverage?: Coverage; connections?: InventoryConnection[]; schemaVersion: '0.1'; source: string; format: string; records: AuthorityRecord[]; findings: Finding[]; errors: string[]; }

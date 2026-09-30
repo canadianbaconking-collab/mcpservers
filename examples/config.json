@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "dataDir": "../.suite",
+  "repos": {"suite": ".."},
+  "allowFileWrites": false,
+  "checks": {}
+}

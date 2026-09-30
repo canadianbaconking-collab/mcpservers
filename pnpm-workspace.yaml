@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+  - servers/*
+minimumReleaseAgeExclude:
+  - '@modelcontextprotocol/client@2.2.0'
+  - '@modelcontextprotocol/core@2.2.0'
+  - '@modelcontextprotocol/server@2.2.0'

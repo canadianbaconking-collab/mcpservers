@@ -1,0 +1,45 @@
+Verified 43 pinned vendor files.
+Checking formatting...
+All matched files use Prettier code style!
+✔ Faultline adapter: trusted base policy, exact diff hash and no project execution (2819.897ms)
+✔ BlackBird adapter: upstream verifier reproduces a synthetic bundle and rejects tampering (1398.4214ms)
+✔ Independent stdio processes share durable artifact references across a server restart (2371.2241ms)
+✔ Canonical evidence: object order stable; arrays ordered and nonfinite values rejected (2.4048ms)
+✔ SQLite: durable reopen, atomic rollback, immutable rows and independent connections (587.3174ms)
+✔ Integrity: content and chain corruption are detected even after local triggers are removed (624.1046ms)
+✔ Path boundary: traversal, Windows alternate streams, device names, symlink directory and file bounds (479.3145ms)
+✔ Transaction crash recovery: exact target bytes reconcile after a file replacement before journal commit (474.4137ms)
+✔ Chronology uses instants rather than lexical fractional timestamps (465.0712ms)
+✔ All 12 compose: inspect → check → evidence → decision → pilot → release → local transaction (2438.3908ms)
+✔ Repo State: observes real commits, dirtiness and bounded project state (1405.3916ms)
+✔ Environment Doctor: reports availability and presence without credential values (919.2792ms)
+✔ Verification: file evidence, equality, configured checks, failures and timeout (2105.1739ms)
+✔ Authority: Coldgate preserves unknown approvals; Driftglass denies by default and never grants execution (355.9618ms)
+✔ Evidence Ledger: idempotent artifacts, explicit contradictions and missing IDs (307.889ms)
+✔ Agent Run Telemetry: optimistic concurrency, chain integrity and closed-run rejection (305.7838ms)
+✔ Decision Memory: references, immutable supersession and cycle prevention (322.5293ms)
+✔ Release Engineer: clean HEAD plus registered check; rejects dirty, stale and insufficient evidence (2229.1364ms)
+✔ Security Surface: Coldgate report, changes and manifest metadata do not run scripts (314.4572ms)
+✔ Pilot Lab: pending before outcome, exact Brier scores, no second outcome (321.3149ms)
+✔ Scenario/Fixture: stable synthetic fixtures and order-independent JSON comparison (303.2733ms)
+✔ Action Transaction: explicit enablement, preconditions, idempotence and abort (329.1543ms)
+✔ repo-state: SDK stdio initialize, list, call, resource and validation (1635.2788ms)
+✔ environment-doctor: SDK stdio initialize, list, call, resource and validation (1181.0324ms)
+✔ verification: SDK stdio initialize, list, call, resource and validation (725.5737ms)
+✔ authority: SDK stdio initialize, list, call, resource and validation (757.7094ms)
+✔ evidence-ledger: SDK stdio initialize, list, call, resource and validation (629.1014ms)
+✔ agent-run-telemetry: SDK stdio initialize, list, call, resource and validation (660.0418ms)
+✔ decision-memory: SDK stdio initialize, list, call, resource and validation (670.3646ms)
+✔ release-engineer: SDK stdio initialize, list, call, resource and validation (810.4761ms)
+✔ security-surface: SDK stdio initialize, list, call, resource and validation (701.6028ms)
+✔ pilot-lab: SDK stdio initialize, list, call, resource and validation (672.516ms)
+✔ scenario-fixture: SDK stdio initialize, list, call, resource and validation (694.0965ms)
+✔ action-transaction: SDK stdio initialize, list, call, resource and validation (668.4347ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10389.239
