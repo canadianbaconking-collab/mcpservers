@@ -1,0 +1,8 @@
+node_modules/
+.suite/
+*.sqlite*
+coverage/
+demo-output/
+*.local.json
+__pycache__/
+*.pyc
